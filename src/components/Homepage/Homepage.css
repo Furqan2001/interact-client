@@ -1,0 +1,11 @@
+.homebtn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #54b8e0;
+  border-color: #54b8e0;
+}
+
+.homebtn:hover {
+  background-color: #1293d1;
+  border-color: #09c128;
+}

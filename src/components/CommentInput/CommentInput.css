@@ -1,0 +1,9 @@
+.comment-form {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.comment-button {
+  margin-top: 0;
+  margin-left: 10px;
+}

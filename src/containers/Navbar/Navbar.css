@@ -1,0 +1,17 @@
+.collapse.navbar-collapse {
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 500px) {
+  #navbarSupportedContent {
+    margin-top: 10px;
+  }
+
+  .navbar-toggler {
+    border: 0;
+  } 
+
+  .nav.navbar-nav li {
+    margin-top: 5px;
+  }
+}

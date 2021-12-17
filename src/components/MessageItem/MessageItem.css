@@ -1,0 +1,169 @@
+.message-area {
+  width: 100%;
+  font-size: 18px;
+}
+
+.comment_count {
+  text-align: center;
+  color: grey;
+}
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+  border-radius: 28px;
+  padding: 30px 10px 20px 10px;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
+.collective {
+  transition: width 0.2s ease-out;
+}
+
+.collective:hover {
+  width: 104%;
+  margin-left: -2%;
+  box-shadow: 0 10px 15px rgba(8, 145, 150, 0.48);
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-section {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.post-image {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  margin-left: 8px;
+  border-radius: 50px;
+}
+
+.post-text {
+  font-family: Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+  width: 525px;
+}
+
+.message-delete-button {
+  margin-right: 20px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: white;
+  fill: dimgray;
+  text-align: center;
+  padding-top: 4px;
+  transition: 0.2s linear;  
+}
+
+.message-delete-button:hover {
+  background: rgb(143, 226, 214);
+  fill: rgb(87, 87, 243);
+}
+
+.modal-success {
+  width: 48%;
+  margin-top: 0;
+  margin-right: 2%;
+} 
+
+.modal-danger {
+  width: 50%
+}
+
+.post_stats {
+  display: flex;
+  justify-content: space-around;
+}
+
+.likebtn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #3498db;
+  border-radius: 0.6em;
+  color: #3498db;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 10px;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.likebtn:hover{
+  color: #fff;
+  outline: 0;
+  background-color: rgb(10, 41, 37);
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
+.liked {
+  background-color: rgb(3, 17, 15);
+  color: white;
+  box-shadow: 0 0 10px 0 #33a1eb inset, 0 0 10px 4px #33a1eb;
+}
+
+@media screen and (max-width: 500px) {
+  .content-section {
+    width: -webkit-fill-available;
+  }
+
+  .message-area {
+    font-size: 16px;
+  }
+
+  .post-image {
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+  }
+
+  .post-text {
+    width: 290px;
+    margin-right: 12px;
+  }
+  
+  .likebtn {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .comment_count {
+    font-size: 14px;
+  }
+
+  .message-delete-button svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .post-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px
+  }
+
+  .post-text {
+    width: 200px;
+    margin-right: 12px;
+  }
+}
